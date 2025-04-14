@@ -6,11 +6,11 @@ import { UpdateVehicleDto } from '../entitites/update-vehicle';
 
 export abstract class IVehiclesController {
   public abstract create(
-    product: CreateVehicleDto,
+    vehicle: CreateVehicleDto,
   ): Promise<ApplicationResult<any>>;
   public abstract update(
     id: string,
-    product: UpdateVehicleDto,
+    vehicle: UpdateVehicleDto,
   ): Promise<Result<VehicleEntity>>;
   public abstract findOne(name: string): Promise<Result<VehicleEntity>>;
   public abstract findAll(): Promise<Result<VehicleEntity[]>>;
