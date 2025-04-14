@@ -2,14 +2,6 @@
 
 Tech Challenge - Software Architecture
 
-Acesse a [Wiki do Projeto](https://github.com/tshadz/soat3-tech-chalenge/wiki) para mais informações a respeito dos:
-
-- Requisitos técnicos (business)
-- Domain-Driven Design
-- S-SDLC
-- Arquitetura
-- Vídeo explicativo postado no Vimeo
-
 <p align="center">
   <a href="#tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#running">Como rodar a aplicação</a> &#xa0; | &#xa0;
