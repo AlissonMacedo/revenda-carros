@@ -1,8 +1,24 @@
 import { NestFactory } from '@nestjs/core';
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { PrismaService } from './external/driven/infra/database/prisma.service';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  await app.listen(process.env.PORT ?? 3000);
+  const prismaService = app.get(PrismaService);
+
+  app.enableCors();
+
+  const config = new DocumentBuilder()
+    .setTitle('Revenda Carros')
+    .setDescription('Api to handle a revenda de carros service')
+    .setVersion('1.0.0')
+    .build();
+
+  const document = SwaggerModule.createDocument(app, config);
+
+  SwaggerModule.setup('swagger', app, document);
+
+  await app.listen(process.env.PORT ?? 8080);
 }
 bootstrap();
