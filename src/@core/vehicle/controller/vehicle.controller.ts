@@ -18,8 +18,8 @@ export class VehiclesController implements IVehiclesController {
   ) {}
 
   async create(createVehicleDto: CreateVehicleDto) {
-    const createdProduct = await this.vehiclesService.create(createVehicleDto);
-    if (createdProduct.status === ResultStatus.ERROR) {
+    const createdVehicle = await this.vehiclesService.create(createVehicleDto);
+    if (createdVehicle.status === ResultStatus.ERROR) {
       return new ApplicationResult(
         ApplicationResultEventsMessages.ERROR,
         'Not able to create the vehicle',
@@ -27,7 +27,7 @@ export class VehiclesController implements IVehiclesController {
     }
     return new ApplicationResult(
       ApplicationResultEventsMessages.SUCCESS_CREATED,
-      createdProduct as unknown as string,
+      createdVehicle as unknown as string,
     );
   }
 
@@ -77,8 +77,8 @@ export class VehiclesController implements IVehiclesController {
     return await this.vehiclesService.findOne(category);
   }
 
-  async update(id: string, updateProductDto: UpdateVehicleDto) {
-    return await this.vehiclesService.update(id, updateProductDto);
+  async update(id: string, updateVehicleDto: UpdateVehicleDto) {
+    return await this.vehiclesService.update(id, updateVehicleDto);
   }
 
   async sellVehicle(id: string, sellVehicleDto: SellVehicleDto) {

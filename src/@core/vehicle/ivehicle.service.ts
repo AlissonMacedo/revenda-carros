@@ -5,13 +5,13 @@ import { CreateVehicleDto } from './entitites/create-vehicle.dto';
 
 export abstract class IVehiclesService {
   public abstract create(
-    product: CreateVehicleDto,
+    vehicle: CreateVehicleDto,
   ): Promise<Result<VehicleEntity>>;
   public abstract update(
     id: string,
-    category: UpdateVehicleDto,
+    vehicle: UpdateVehicleDto,
   ): Promise<Result<VehicleEntity>>;
-  public abstract findOne(category: string): Promise<Result<VehicleEntity>>;
+  public abstract findOne(vehicle: string): Promise<Result<VehicleEntity>>;
   public abstract findAll(): Promise<Result<VehicleEntity[]>>;
   public abstract remove(id: string): Promise<void>;
 }
