@@ -67,14 +67,27 @@ $ npx ts-node prisma/seed.ts
 # O servidor inciará na porta:8080 - acesse <http://localhost:8080>
 ```
 
-![docker compose up](https://github.com//AlissonMacedo/revenda-carros/assets/01)
-![conect to database](https://github.com//AlissonMacedo/revenda-carros/assets/02)
+<a>docker compose up</a>
+
+<p align="center">
+  <img src="./assets/01.gif" alt="search" title="search">
+</p>
+
+<a>conect to database</a>
+
+<p align="center">
+  <img src="./assets/02.gif" alt="search" title="search">
+</p>
 
 ## Swagger
 
 ### Após rodar o projeto, acesse http://localhost:8080/swagger
 
-![swegger](https://github.com//AlissonMacedo/revenda-carros/assets/03)
+<a>swegger</a>
+
+<p align="center">
+  <img src="./assets/03.gif" alt="search" title="search">
+</p>
 
 ## Fluxo para consumo da API simulando um atendimento no totem
 
