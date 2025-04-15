@@ -50,7 +50,7 @@ IMAGE_NAME="revenda-carros"
 # Iniciar o projeto
 $ docker compose up -d --build
 
-# Acesse o container
+# Caso queria popupar o banco, acesse o container
 $ docker exec -it revenda-carros sh
 
 # Dentro do container rode o seed
