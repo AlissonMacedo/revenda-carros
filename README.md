@@ -84,7 +84,26 @@ $ npx ts-node prisma/seed.ts
 ## Fluxo para consumo da API simulando um atendimento no totem
 
 1. Post - Cadastrar um veículo para venda (Marca, modelo, ano, cor e preço)
+<p align="center">
+  <img src="./assets/04.gif" alt="search" title="search">
+</p>
 2. Patch - Editar os dados do veículo;
+<p align="center">
+  <img src="./assets/05.gif" alt="search" title="search">
+</p>
 3. Patch - Efetuar a venda de um veículo (CPF da pessoa que comprou, data da venda);
-4. Get - Listagem de veículos à venda, ordenada por preço, do mais barato para o mais caro
+<p align="center">
+  <img src="./assets/06.gif" alt="search" title="search">
+</p>
+4. Get - Listagem de veículos à venda, ordenada por preço, do mais barato para o mais caro.
+<p align="center">
+  <img src="./assets/07.gif" alt="search" title="search">
+</p>
 5. Get - Listagem de veículos vendidos, ordenada por preço, do mais barato para o mais caro.
+<p align="center">
+  <img src="./assets/08.gif" alt="search" title="search">
+</p>
+6. Registrar todas as datas de alteração das informações relacionadas ao veículo.
+<p align="center">
+  <img src="./assets/09.gif" alt="search" title="search">
+</p>
